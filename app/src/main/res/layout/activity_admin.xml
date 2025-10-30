@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/background_light">
+
+    <!-- Imagen del logo del administrador -->
+
+    <!-- Encabezado -->
+
+    <!-- Estado general -->
+
+    <ImageView
+        android:id="@+id/logoAdmin"
+        android:layout_width="95dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="Logo del administrador"
+        android:src="@drawable/admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adamina"
+        android:gravity="center"
+        android:text="Panel de Control - Administrador"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoEstadoSistema"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Sistema en línea\nSensores activos: 3\nUsuarios conectados: 2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloAdmin" />
+
+    <!-- Botones de gestión -->
+    <Button
+        android:id="@+id/botonMonitoreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/adamina"
+        android:text="Ver Monitoreo General"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoEstadoSistema" />
+
+    <Button
+        android:id="@+id/botonReiniciar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:fontFamily="@font/adamina"
+        android:text="Reiniciar Sistema"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonMonitoreo" />
+
+    <!-- Simulación de registro de eventos -->
+    <TextView
+        android:id="@+id/textoLogs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray"
+        android:fontFamily="sans-serif-black"
+        android:padding="12dp"
+        android:text="Registro de eventos:\n- Sensor 1 en línea\n- Sensor 2 sin conexión\n- Actualización: 12:45"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonReiniciar" />
+
+    <!-- Botón de cierre -->
+    <Button
+        android:id="@+id/botonSalirAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:fontFamily="@font/adamina"
+        android:text="Cerrar sesión"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textoLogs" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
